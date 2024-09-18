@@ -1,61 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
-</head>
-
-<body>
-    <div class="hero">
-        <nav>
-            <img src="logo.png" alt="logo">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Hire me</a></li>
-                
-            </ul>
-            <img src="moon.png" id="icon">
-            
-        </nav>
-        <div class="info">
-            <h1>I'm Md <span>Faizan</span> Ansari</h1>
-            <p>This is my official Portfolio Website to showcase my all works related
-                to web <br> development and UI design</p>
-            <a href="Faizan_Resume_test.pdf" target="_blank">Download CV</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">Md Faizan Ansari</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">
+            I'm <span>Md Faizan Ansari<br />a</span> Web Developer
+          </h1>
+          <p class="description">
+            Welcome to my web developer portfolio! I'm Md Faizan Ansari, a skilled and
+            creative web developer with a passion for creating beautiful,
+            responsive, and user-friendly websites. I've worked on a variety of
+            web projects, ranging from personal blogs to e-commerce platforms.
+          </p>
+          <div class="action__btns">
+            <button class="hire__me">Hire Me</button>
+            <button class="portfolio"><a href="Faizan_Resume.pdf">Resume</a></button>
+          </div>
         </div>
-        <div class="img-box">
-            <img height="105%" src="pattern.png" class="back-img">
-            <img height="100%" src="img2.png" class="Main-img">
+        <div class="image">
+          <img src="img2.png" alt="profile" />
         </div>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/md-faizan-ansari-834a2a207/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/MDfaizan-786"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-        </div>
-    </div>
-<script>
-    var icon = document.getElementById("icon");
-    icon.onclick = function()
-    {
-        document.body.classList.toggle("dark-theme")
-        if(document.body.classList.contains("dark-theme"))
-        {
-            icon.src = "sun.png";
-        }
-        else
-        {
-            icon.src = "moon.png";
-        }
-    }
-</script>
-</body>
-
+      </div>
+    </section>
+  </body>
 </html>
